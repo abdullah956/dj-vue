@@ -9,6 +9,9 @@ class MathGameView(TemplateView):
     template_name = "math-game.html"
 class AnagramGameView(TemplateView):
     template_name = "anagram-game.html"
+    def dispatch(self, request, *args, **kwargs):
+        print("AnagramGameView is loading")
+        return super().dispatch(request, *args, **kwargs)
 class GameScoreView(TemplateView):
     template_name = "games-score.html"
     def get_context_data(self, **kwargs):
