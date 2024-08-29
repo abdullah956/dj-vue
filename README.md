@@ -1,1 +1,1 @@
-# DjangoVue
+# dj-vue
